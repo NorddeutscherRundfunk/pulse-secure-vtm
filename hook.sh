@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-function deploy_challenge {
+deploy_challenge() {
     local DOMAIN="${1}" TOKEN_FILENAME="${2}" TOKEN_VALUE="${3}"
 }
 
-function clean_challenge {
+clean_challenge() {
     local DOMAIN="${1}" TOKEN_FILENAME="${2}" TOKEN_VALUE="${3}"
 }
 
@@ -31,7 +31,7 @@ deploy_cert() {
     rm cert.json
 }
 
-function unchanged_cert {
+unchanged_cert() {
     local DOMAIN="${1}" KEYFILE="${2}" CERTFILE="${3}" FULLCHAINFILE="${4}" CHAINFILE="${5}"
 }
 
